@@ -1,0 +1,27 @@
+$vokabel =~ s/_/__/g; # unterstich ersetzten (muss als erstes passieren) 
+$vokabel =~ s/-/_-/g; # Bindestrich ersetzten 
+$vokabel =~ s/ /__/g; # Leerzeichen ersetzten 
+$vokabel =~ s/\,/__/g;     # Beistrich ersetzten 
+$vokabel =~ s/\./_PP/g;    # Punkt ersetzten 
+$vokabel =~ s/\?/_FF/g;    # Fragezeichen ersetzten 
+$vokabel =~ s/\!/_RR/g;    # Rufzeichen ersetzten 
+$vokabel =~ s/\(/_KK/g;    # Klammer auf ersetzten 
+$vokabel =~ s/\)/_ZZ/g;    # Klammer zu ersetzten 
+$vokabel =~ s/\°/_GG/g;    # Gradzeichen  ersetzten 
+$vokabel =~ s/\'/_AP/g;    # Apostroph  ersetzten 
+$vokabel =~ s/\//_VS/g;    # Vorwärts Schrägstrich ersetzten 
+$vokabel =~ s/\\/_RS/g;    # Rückwärts Schrägstrich ersetzten 
+$vokabel =~ s/ß/_ss/g;    # Scharfes S ersetzten 
+$vokabel =~ s/ä/_ae/g;    # Umlaute ersetzten 
+$vokabel =~ s/ü/_ue/g; 
+$vokabel =~ s/ö/_oe/g; 
+$vokabel =~ s/Ä/_AE/g;
+$vokabel =~ s/Ü/_UE/g; 
+$vokabel =~ s/Ö/_OE/g; 
+$vokabel =~ s/é/_AAe/g;  # Akzent Akut ersetzten 
+$vokabel =~ s/í/_AAi/g; 
+$vokabel =~ s/ê/_AZe/g;  # Akzent Zirkumflex ersetzten 
+$vokabel =~ s/ã/_ATa/g;  # Akzent Tilde ersetzten
+
+
+
