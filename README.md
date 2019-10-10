@@ -1,6 +1,6 @@
 # Lectary
 
-Lectary is an opensource app to help learning sign language. For more information check the [offical website](https://lectary.net/).
+Lectary is an opensource app to help learning sign language. For more information check the [Lectary website](https://lectary.net/).
 
 ## React-Native
 
