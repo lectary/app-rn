@@ -14,7 +14,7 @@ After that you can initialize your project:
 
 ## Videos on the webserver
 
-The app can download videos over the Internet from a dedicated server. The videos of a lesson are in in a standard zip-file (not PK-zip). The location of the zip-Files are defined in  `Constants.js`. In the following example the zip-files (which hold the videos) are stored on a server `https://example.com/videos/`. An overview of all zip-files available is stored at `https://example.com/videos/overview.json`
+The app can download videos over the Internet from a dedicated server. The videos of a lesson are in in a standard zip-file (not PK-zip). The location of the zip-files are defined in  `Constants.js`. In the following example the zip-files (which hold the videos) are stored on a server `https://example.com/videos/LESSON__1` and `https://example.com/videos/LESSON__2`. An overview of all zip-files available is stored at `https://example.com/videos/overview.json`
 
 Thus, `Constants.js` must be defined as follows:
 ```
@@ -32,6 +32,11 @@ The answer from `https://example.com/videos/overview.json` could be
   "fileName": "LESSON__1.zip",
   "vocableCount": 2,
   "fileSize": 5
+},
+{
+  "fileName": "LESSON__2.zip",
+  "vocableCount": 3,
+  "fileSize": 6
 }
 ]
 ```
@@ -39,12 +44,21 @@ The answer from `https://example.com/videos/overview.json` could be
 The .zip folders of the video lessons have to be downloadable from the same main path with the file name as path. Inside the 
 .zip another folder has to exist with the exact name as the zip that contains the .mp4 files.
 
+Example for content of `https://example.com/videos/LESSON__1.zip`:
 ```
-Example for content of https://example.com/videos/LESSON__1.zip:
 | LESSON__1
 +- video1.mp4
 +- video2.mp4
 ```
+
+Example for content of `https://example.com/videos/LESSON__2.zip`:
+```
+| LESSON__2
++- Video1__from__Lesson__2.mp4
++- Video2__from__Lesson__2.mp4
++- Video3__from__Lesson__2.mp4
+```
+
 
 ## Compile and run the app 
 
