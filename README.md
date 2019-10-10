@@ -41,8 +41,7 @@ The answer from `https://example.com/videos/overview.json` could be
 ]
 ```
 
-The .zip folders of the video lessons have to be downloadable from the same main path with the file name as path. Inside the 
-.zip another folder has to exist with the exact name as the zip that contains the .mp4 files.
+A .zip-file holds a folder of the same name (like the .zip-file) and that folder contains the .mp4 files.
 
 Example for content of `https://example.com/videos/LESSON__1.zip`:
 ```
