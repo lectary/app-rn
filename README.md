@@ -12,13 +12,11 @@ npm is required to install and run react native and its dependencies. To install
 After that you can initialize your project:
 `react-native init <project-name>`
 
-## Compile and run the app 
+## Videos on the webserver
 
-To build the app for Android the Android SDK is required. To build the app for iOS XCode is required. 
+The app can download videos over the Internet from a dedicated server. The videos of a lesson are in in a standard zip-file (not PK-zip). The location of the zip-Files are defined in  `Constants.js`. In the following example the zip-files (which hold the videos) are stored on a server `https://example.com/videos`. The overview of the zip-files are available at `https://example.com/videos/overview.json`
 
-For security reasons the url and path to the files has been removed from `Constants.js`. These have to be added to be able to download lessons. 
-
-Assume following setup in `Constants.js`
+Thus, `Constants.js` must be defined as follows:
 ```
 ...
 lectaryUrl: 'https://example.com/videos',
@@ -47,6 +45,11 @@ Example for content of https://example.com/videos/LESSON__1.zip:
 +- video1.mp4
 +- video2.mp4
 ```
+
+## Compile and run the app 
+
+To build the app for Android the Android SDK is required. To build the app for iOS XCode is required. 
+
 
 
 To start the app run:
