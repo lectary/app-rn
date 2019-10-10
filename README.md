@@ -69,11 +69,12 @@ to create a local bundle for the ios app, such that i can use this one in case t
 In my case the app was not able to connect to running server on my phone, so i had to run the following commands before:
 
 `mkdir android\app\src\main\assets` (inside the project folder)
+
 `react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res`
 
 `react-native run-android`
 
-(solution found on [StackOverflow](https://stackoverflow.com/questions/44446523/unable-to-load-script-from-assets-index-android-bundle-on-windows)
+(solution found on [StackOverflow](https://stackoverflow.com/questions/44446523/unable-to-load-script-from-assets-index-android-bundle-on-windows))
 
 After the app has been deployed on the device it can be reloaded using the node development server that is started via:
 
