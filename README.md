@@ -14,7 +14,7 @@ After that you can initialize your project:
 
 ## Videos on the webserver
 
-The app can download videos over the Internet from a dedicated server. The videos of a lesson are in in a standard zip-file (not PK-zip). The location of the zip-Files are defined in  `Constants.js`. In the following example the zip-files (which hold the videos) are stored on a server `https://example.com/videos`. The overview of the zip-files are available at `https://example.com/videos/overview.json`
+The app can download videos over the Internet from a dedicated server. The videos of a lesson are in in a standard zip-file (not PK-zip). The location of the zip-Files are defined in  `Constants.js`. In the following example the zip-files (which hold the videos) are stored on a server `https://example.com/videos/`. An overview of all zip-files available is stored at `https://example.com/videos/overview.json`
 
 Thus, `Constants.js` must be defined as follows:
 ```
