@@ -1,25 +1,33 @@
 # Lectary
 
-Lectary is an opensource app to help learning sign language. For more information check the [offical website](https://lectary.net/about).
+Lectary is an opensource app to help learning sign language. For more information check the [offical website](https://lectary.net/).
 
 ## React-Native
 
-The best how to install react native can be found on the [official site](https://facebook.github.io/react-native/)
+A tutorial for installing react native can be found on the [official site](https://facebook.github.io/react-native/)
 
-Npm is required to run the program and install it's dependencies. To install the react-native client use the command:
+npm is required to install and run react native and its dependencies. To install the react-native client use the command:
 `npm install -g react-native-cli`
 
-After that you can initialize your project using
+After that you can initialize your project:
 `react-native init <project-name>`
-
-To build the app the android sdk is required and on Windows the environment variable ANDROID_HOME has to be set (all of this is described in the offical guide mentioned in the beginning). For the iOS build XCode has to be setup on you macOS device.
 
 ## Compile and run the app 
 
-For security reasons the url and path to the files has been removed from `Constants.js`. These have to be added to successfully download 
-lessons. The expected format of the main goal is json file in the format of:
+To build the app for Android the Android SDK is required. To build the app for iOS XCode is required. 
 
-Answer from `curl http://<url>/<all-files-path>`:
+For security reasons the url and path to the files has been removed from `Constants.js`. These have to be added to be able to download lessons. 
+
+Assume following setup in `Constants.js`
+```
+...
+lectaryUrl: 'https://example.com/videos',
+lectaryAllFilesPath: 'overview.json',
+...
+```
+
+The answer from `https://example.com/videos/overview.json` could be
+
 ```
 [
 {
@@ -33,14 +41,14 @@ Answer from `curl http://<url>/<all-files-path>`:
 The .zip folders of the video lessons have to be downloadable from the same main path with the file name as path. Inside the 
 .zip another folder has to exist with the exact name as the zip that contains the .mp4 files.
 
-e.g. `curl http://<url>/LESSON__1.zip`
-
 ```
-Example for content of LESSON__1.zip:
+Example for content of https://example.com/videos/LESSON__1.zip:
 | LESSON__1
 +- video1.mp4
 +- video2.mp4
 ```
+
+
 To start the app run:
 
 `react-native run-android` 
@@ -108,10 +116,15 @@ on the device. The video themselves are stored in the storage of device. For the
 The following colors are the only ones used. They are defined in the constants.js file as well.
 
 `#FFDA5D yellow`
+
 `#F8F8F8 white`
+
 `#E95876 red`
+
 `#97E975 green`
+
 `#5AC1CF lightblue`
+
 `#053751 darkblue`
 
 ## Future ideas
