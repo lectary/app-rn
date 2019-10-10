@@ -14,7 +14,7 @@ After that you can initialize your project:
 
 ## Videos on the webserver
 
-The app can download videos over the Internet from a dedicated server. In the following example the zip-files (which hold the videos) are stored on a server `https://example.com/videos/LESSON__1.zip` and `https://example.com/videos/LESSON__2.zip`. An overview of all zip-files available is stored at `https://example.com/videos/overview.json`
+The app can download videos over the Internet from a dedicated server. In the following example the zip-files (which hold the videos) are stored on a server `https://example.com/videos/LESSON__1.zip` and `https://example.com/videos/LESSON__2.zip` and an overview of all zip-files is available at `https://example.com/videos/overview.json`
 
 Thus, `Constants.js` must be defined as follows:
 ```
@@ -46,17 +46,17 @@ The .zip folders of the video lessons have to be downloadable from the same main
 
 Example for content of `https://example.com/videos/LESSON__1.zip`:
 ```
-| LESSON__1
-+- video1.mp4
-+- video2.mp4
+LESSON__1/
+  +- video1.mp4
+  +- video2.mp4
 ```
 
 Example for content of `https://example.com/videos/LESSON__2.zip`:
 ```
-| LESSON__2
-+- Video1__from__Lesson__2.mp4
-+- Video2__from__Lesson__2.mp4
-+- Video3__from__Lesson__2.mp4
+LESSON__2/
+  +- Video1__from__Lesson__2.mp4
+  +- Video2__from__Lesson__2.mp4
+  +- Video3__from__Lesson__2.mp4
 ```
 
 
