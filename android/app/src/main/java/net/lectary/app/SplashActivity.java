@@ -1,4 +1,4 @@
-package com.lectary3;
+package net.lectary.app;
 
 import android.content.Intent;
 import android.os.Bundle;
